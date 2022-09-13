@@ -15,32 +15,62 @@
 
   <body class="page-body">
     <header class="main-header">
-      <a class="logo">
-        <img class="logo__image" src="#" width="100" height="100" alt="Логотип Nerds">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="blank.html">Студия</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="blank.html">Клиенты</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="blank.html">Магазин</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="blank.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="user-block">
-        <ul class="user-block__list">
-          <li class="user-block__item">
-            <a class="user-block__link" href="blank.html">Корзина</a>
-          </li>
-        </ul>
+      <div class="container main-header__container">
+        <a class="logo main-header__logo">
+          <img class="logo__image" src="img/logo-nerds.svg" width="160" height="66" alt="Логотип Nerds">
+        </a>
+        <nav class="main-header__nav">
+          <ul class="links">
+            <li class="links__item">
+              <a class="links__link" href="blank.html">Студия</a>
+            </li>
+            <li class="links__item">
+              <a class="links__link" href="blank.html">Клиенты</a>
+            </li>
+            <li class="links__item">
+              <a class="links__link" href="catalog.html">Магазин</a>
+            </li>
+            <li class="links__item">
+              <a class="links__link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__user-block">
+          <ul class="links">
+            <li class="links__item links__item--cart links__item--active">
+              <a class="links__link" href="blank.html">Корзина</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
+    <main class="main-content">
+      <section class="slider">
+        <h2 class="visually-hidden">Блок слайдера</h2>
+        <ul class="slider__list">
+          <li class="slider__item">
+            <p class="promo__title">Долго, дорого, скрупулезно.</p>
+            <p class="promo__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a class="button">Узнать больше</a>
+          </li>
+          <li class="slider__item">
+            <p class="promo__title">Любим математику как никто другой</p>
+            <p class="promo__text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <a class="button">Узнать больше</a>
+          </li>
+          <li class="slider__item">
+            <p class="promo__title">Только ночь, только хардкор</p>
+            <p class="promo__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button">Узнать больше</a>
+          </li>
+        </ul>
+        <ul class="slider__controls-list">
+          <li class="slider__control-item"></li>
+          <li class="slider__control-item"></li>
+          <li class="slider__control-item"></li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
