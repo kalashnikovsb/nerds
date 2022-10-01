@@ -173,7 +173,7 @@
 
 
 .main-footer {
-  background: lightblue;
+  
 }
 
 .main-footer__container {
@@ -423,7 +423,6 @@
   display: flex;
   flex-wrap: wrap;
   border-bottom: 2px solid var(--gray-color1);
-  background: lightyellow;
 }
 
 .products__item {
@@ -464,4 +463,129 @@
   color: var(--gray-color4);
   margin-top: 0;
   margin-bottom: 32px;
+}
+
+
+.info {
+  
+}
+
+.info__container {
+  display: flex;
+  border-bottom: 2px solid var(--gray-color1);
+  padding-bottom: 50px;
+}
+
+.info__left {
+  width: 760px;
+  padding-right: 40px;
+  padding-top: 73px;
+}
+
+.info__title {
+  font-size: 45px;
+  line-height: 46px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 31px;
+}
+
+.info__text {
+  line-height: 24px;
+  color: var(--gray-color4);
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.info__list-caption {
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--gray-color4);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.info__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info__item {
+  line-height: 24px;
+  color: var(--gray-color4);
+  padding-left: 36px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.info__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: var(--red-color1);
+}
+
+.info__right {
+  flex-grow: 1;
+  padding-top: 39px;
+}
+
+.info__logo {
+  display: block;
+  width: 360px;
+  height: 208px;
+  object-fit: contain;
+  max-width: 100%;
+  margin-bottom: 36px;
+}
+
+.info__numbers-caption {
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.info__numbers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.info__number-item {
+  width: 120px;
+}
+
+.info__number {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.info__number-percent {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.info__number-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--gray-color4);
 }
