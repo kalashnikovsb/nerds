@@ -14,7 +14,7 @@
   </head>
 
   <body class="page-body">
-    <header class="main-header">
+    <header class="main-header main-header--catalog">
       <div class="container main-header__container">
         <a class="logo main-header__logo" href="index.html">
           <img class="logo__image" src="img/logo-nerds.svg" width="160" height="66" alt="Логотип Nerds">
@@ -48,8 +48,80 @@
     </header>
 
     <main class="main-content">
-      
-    </main>
+        <div class="page-title">
+          <h1 class="page-title__title">Магазин готовых шаблонов</h1>
+        </div>
+
+        <div class="container main-content__container">
+          <section class="filter">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+
+              <fieldset class="filter__fieldset filter__fieldset--range">
+                <legend class="filter__legend filter__legend--range">Стоимость:</legend>
+                <div class="range filter__range">
+                  <div class="range__block">
+                    <div class="range__line">
+                      <span class="range__toggler range__toggler--from"></span>
+                      <span class="range__toggler range__toggler--to"></span>
+                    </div>
+                  </div>
+                  <div class="range__number range__number--from">
+                    <span class="range__text">От</span>
+                    <input class="range__input range__input--from" type="text" value="0">
+                  </div>
+                  <div class="range__number range__number--to">
+                    <span class="range__text">До</span>
+                    <input class="range__input range__input--to" type="text" value="150 000">
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter__fieldset filter__fieldset--layout">
+                <legend class="filter__legend filter__legend--layout">Сетка:</legend>
+                <div class="filter__input-wrap filter__input-wrap--radio">
+                  <input class="filter__input filter__input--radio" type="radio" name="layout" id="adaptive" value="adaptive">
+                  <label class="filter__label" for="adaptive">Адаптивная</label>
+                </div>
+                <div class="filter__input-wrap filter__input-wrap--radio">
+                  <input class="filter__input filter__input--radio" type="radio" name="layout" id="fixed" value="fixed">
+                  <label class="filter__label" for="fixed">Фиксированная</label>
+                </div>
+                <div class="filter__input-wrap filter__input-wrap--radio">
+                  <input class="filter__input filter__input--radio" type="radio" name="layout" id="ribbon" value="ribbon">
+                  <label class="filter__label" for="ribbon">Резиновая</label>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter__fieldset filter__fieldset--features">
+                <legend class="filter__legend filter__legend--features">Особенности:</legend>
+                <div class="filter__input-wrap filter__input-wrap--checkbox">
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="slider" id="slider" value="slider">
+                  <label class="filter__label" for="slider">Слайдер</label>
+                </div>
+                <div class="filter__input-wrap filter__input-wrap--checkbox">
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="benefits" id="benefits" value="benefits">
+                  <label class="filter__label" for="benefits">Блок преимуществ</label>
+                </div>
+                <div class="filter__input-wrap filter__input-wrap--checkbox">
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="news" id="news" value="news">
+                  <label class="filter__label" for="news">Новости</label>
+                </div>
+                <div class="filter__input-wrap filter__input-wrap--checkbox">
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="gallery" id="gallery" value="gallery">
+                  <label class="filter__label" for="gallery">Галерея</label>
+                </div>
+                <div class="filter__input-wrap filter__input-wrap--checkbox">
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="cart" id="cart" value="cart">
+                  <label class="filter__label" for="cart">Корзина</label>
+                </div>
+              </fieldset>
+
+              <button class="button filter__button button--filter">Показать</button>
+            </form>
+          </section>
+        </div>
+      </main>
 
     <footer class="main-footer">
       <section class="contacts main-footer__contacts">
