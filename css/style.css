@@ -355,9 +355,20 @@
 }
 
 .slider__item {
-  background: yellow;
   padding-top: 73px;
   padding-bottom: 80px;
+}
+
+.slider__item--first {
+  background: url("../img/slider1-image.png") 99.4% 100% no-repeat;
+}
+
+.slider__item--second {
+  background: url("../img/slider2-image.png") 99.4% 100% no-repeat;
+}
+
+.slider__item--third {
+  background: url("../img/slider3-image.png") 99.3% 100% no-repeat;
 }
 
 .slider__inner-text {
@@ -394,7 +405,6 @@
   position: absolute;
   left: calc(50% - 44px);
   bottom: 96px;
-  background: black;
   width: 88px;
   height: 18px;
   display: flex;
@@ -410,6 +420,7 @@
   margin-bottom: 17px;
   background: var(--white-color);
   position: relative;
+  cursor: pointer;
 }
 
 .slider__control-item:nth-of-type(3n) {
@@ -868,7 +879,6 @@
 
 .filter {
   width: 260px;
-  background: lightyellow;
 }
 
 .filter__fieldset {
@@ -1112,7 +1122,6 @@
 
 
 .sorting {
-  background: lightyellow;
   width: 760px;
   display: flex;
   align-items: center;
@@ -1152,7 +1161,6 @@
 
 .sorting__directions {
   display: flex;
-  background: yellow;
   margin-bottom: 2px;
   margin-left: auto;
 }
@@ -1263,6 +1271,8 @@
   padding-top: 41px;
   border-radius: 5px;
   object-fit: contain;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .template__top {
@@ -1336,10 +1346,6 @@
 }
 
 
-
-.pagination {
-  background: lightyellow;
-}
 
 .pagination__list {
   list-style: none;
