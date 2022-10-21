@@ -29,7 +29,7 @@
               <a class="links__link" href="blank.html">Клиенты</a>
             </li>
             <li class="links__item">
-              <a class="links__link  links__item--active" href="catalog.html">Магазин</a>
+              <a class="links__link links__item--active" href="catalog.html">Магазин</a>
             </li>
             <li class="links__item">
               <a class="links__link" href="blank.html">Контакты</a>
@@ -290,5 +290,25 @@
         </section>
       </div>
     </footer>
+
+    <section class="popup visually-hidden">
+      <h2 class="popup__title">Напишите нам</h2>
+      <div class="popup__close" tabindex="0"></div>
+      <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="popup__wrap">
+          <p class="popup__label">Ваше имя:</p>
+          <input class="popup__input" type="text" name="your-name" placeholder="Имя Фамилия" required>
+        </div>
+        <div class="popup__wrap">
+          <p class="popup__label">Ваш email:</p>
+          <input class="popup__input" type="email" name="your-email" placeholder="email@example.com" required>
+        </div>
+        <div class="popup__wrap">
+          <p class="popup__label">Текст письма:</p>
+          <textarea class="popup__textarea" placeholder="В свободной форме" required></textarea>
+        </div>
+        <button class="button button--submit popup__submit" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>

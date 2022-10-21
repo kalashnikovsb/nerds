@@ -23,7 +23,7 @@
         <nav class="main-header__nav">
           <ul class="links">
             <li class="links__item">
-              <a class="links__link" href="blank.html">Студия</a>
+              <a class="links__link links__item--active" href="blank.html">Студия</a>
             </li>
             <li class="links__item">
               <a class="links__link" href="blank.html">Клиенты</a>
@@ -53,7 +53,7 @@
         <div class="container slider__container">
           <h2 class="visually-hidden">Блок слайдера</h2>
           <ul class="slider__list">
-            <li class="slider__item slider__item--first visually-hidden">
+            <li class="slider__item slider__item--first">
               <div class="slider__inner-text">
                 <p class="slider__title">Долго, дорого, скрупулезно.</p>
                 <p class="slider__text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
@@ -67,7 +67,7 @@
                 <a class="button slider__button" href="blank.html">Узнать больше</a>
               </div>
             </li>
-            <li class="slider__item slider__item--third">
+            <li class="slider__item slider__item--third visually-hidden">
               <div class="slider__inner-text">
                 <p class="slider__title slider__title--math">Только ночь,<br> только хардкор</p>
                 <p class="slider__text slider__text--math">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
@@ -205,5 +205,25 @@
         </section>
       </div>
     </footer>
+
+    <section class="popup visually-hidden">
+      <h2 class="popup__title">Напишите нам</h2>
+      <div class="popup__close" tabindex="0"></div>
+      <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="popup__wrap">
+          <p class="popup__label">Ваше имя:</p>
+          <input class="popup__input" type="text" name="your-name" placeholder="Имя Фамилия" required>
+        </div>
+        <div class="popup__wrap">
+          <p class="popup__label">Ваш email:</p>
+          <input class="popup__input" type="email" name="your-email" placeholder="email@example.com" required>
+        </div>
+        <div class="popup__wrap">
+          <p class="popup__label">Текст письма:</p>
+          <textarea class="popup__textarea" placeholder="В свободной форме" required></textarea>
+        </div>
+        <button class="button button--submit popup__submit" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
